@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Siswa - FIRMAN MUHAMAD SEPTIANA</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🎨</span> Portofolio<span class="highlight">DKV</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#tentang" class="nav-item">Tentang Saya</a>
+                <a href="#profil" class="nav-item">Profil</a>
+                <a href="#cita-cita" class="nav-item">Cita-Cita</a>
+                <button class="btn btn-secondary btn-sm" id="openEditBtn">⚙️ Edit Profil</button>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <span id="themeIcon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu Mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-image-wrapper">
+                <div class="profile-frame">
+                    <img id="displayFoto" src="1000333518.jpg" alt="Foto Profil FIRMAN MUHAMAD SEPTIANA" class="profile-img">
+                </div>
+                <span class="nickname-badge" id="displayPanggilanBadge">IMON</span>
+            </div>
+
+            <div class="hero-content">
+                <div class="badge-class">
+                    <span id="displayKelas">Kelas X</span> • <span id="displayJurusanShort">DKV</span>
+                </div>
+                <h1 class="hero-title" id="displayNama">FIRMAN MUHAMAD SEPTIANA</h1>
+                <p class="hero-subtitle">
+                    <span id="displayJurusan">DESAIN KOMUNIKASI VISUAL</span> 
+                    (<span id="displayKonsentrasi">DESAIN KOMUNIKASI VISUAL</span>)
+                </p>
+                <blockquote class="motto-box">
+                    "<span id="displayMotto">Terus Belajar, Berkarya, dan Memacu Diri Menuju Cita-Cita!</span>"
+                </blockquote>
+                
+                <div class="hero-cta">
+                    <a href="#tentang" class="btn btn-primary">Tentang Saya</a>
+                    <a href="#profil" class="btn btn-outline">Lihat Profil</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya Section -->
+    <section id="tentang" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang <span class="highlight">Saya</span></h2>
+                <p>Mengenal lebih dekat langkah awal perjalanan belajar saya</p>
+            </div>
+
+            <div class="card card-tentang">
+                <div class="card-body">
+                    <p class="about-text" id="displayDeskripsi">
+                        Halo! Saya Imon, siswa kelas X jurusan Desain Komunikasi Visual. Saya sangat bersemangat mempelajari hal-hal baru di bidang dunia kreatif, khususnya editing video dan eksplorasi visual storytelling untuk mengembangkan potensi diri sejak dini.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Section -->
+    <section id="profil" class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Profil & <span class="highlight">Minat</span></h2>
+                <p>Informasi kompetensi dan fokus belajar di SMK</p>
+            </div>
+
+            <div class="grid-cards">
+                <div class="card profile-card">
+                    <div class="card-icon">🏫</div>
+                    <h3>Pendidikan</h3>
+                    <ul>
+                        <li><strong>Kelas:</strong> <span id="displayKelasDetail">X</span></li>
+                        <li><strong>Jurusan:</strong> <span id="displayJurusanDetail">DESAIN KOMUNIKASI VISUAL</span></li>
+                        <li><strong>Konsentrasi:</strong> <span id="displayKonsentrasiDetail">DESAIN KOMUNIKASI VISUAL</span></li>
+                    </ul>
+                </div>
+
+                <div class="card profile-card">
+                    <div class="card-icon">🎬</div>
+                    <h3>Minat Utama</h3>
+                    <p class="card-highlight-text" id="displayMinat">EDITING VIDEO</p>
+                    <p class="card-subtext">Mengedit potong klip, efek transisi, dan efek suara untuk menghasilkan karya visual yang menarik.</p>
+                </div>
+
+                <div class="card profile-card">
+                    <div class="card-icon">🏕️</div>
+                    <h3>Hobi</h3>
+                    <p class="card-highlight-text" id="displayHobi">ADVENTURE</p>
+                    <p class="card-subtext">Suka berpetualang dan menjelajahi hal baru untuk mencari inspirasi ide kreatif.</p>
+                </div>
+
+                <div class="card profile-card">
+                    <div class="card-icon">📚</div>
+                    <h3>Fokus Belajar</h3>
+                    <p class="card-highlight-text" id="displayBidang">EDITING VIDEO</p>
+                    <p class="card-subtext">Target keahlian utama yang ingin terus diperdalam selama masa sekolah di SMK.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cita-Cita Section -->
+    <section id="cita-cita" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cita-Cita & <span class="highlight">Motivasi</span></h2>
+                <p>Impian besar yang menjadi pendorong semangat belajar</p>
+            </div>
+
+            <div class="card dream-card">
+                <div class="dream-badge">🏁 IMPAN SAYA</div>
+                <h3 class="dream-title" id="displayCitaCita">PEMBALAP</h3>
+                <p class="dream-desc">
+                    Memiliki impian menjadi seorang pembalap profesional. Kecepatan, fokus, kedisiplinan, dan keberanian di lintasan menjadi sumber inspirasi dalam memacu semangat belajar sehari-hari.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Portofolio Siswa SMK. Dibuat oleh <strong id="displayFooterNama">FIRMAN MUHAMAD SEPTIANA</strong> (IMON).</p>
+            <p class="footer-sub">Siap dikembangkan untuk Kelas XI & XII (Proyek, Karya, Sertifikat, & PKL)</p>
+        </div>
+    </footer>
+
+    <!-- Modal Form Edit Profil (Live Preview) -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>⚙️ Edit Profil Siswa</h3>
+                <button class="close-btn" id="closeModalBtn">&times;</button>
+            </div>
+            
+            <form id="editForm" class="edit-form">
+                <div class="form-group">
+                    <label for="inputFoto">Upload Foto Profil Baru</label>
+                    <input type="file" id="inputFoto" accept="image/*" class="form-control">
+                    <small>Pilih foto dari perangkat Anda untuk langsung memperbarui foto profil.</small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="inputNama">Nama Lengkap</label>
+                        <input type="text" id="inputNama" class="form-control" placeholder="FIRMAN MUHAMAD SEPTIANA">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPanggilan">Nama Panggilan</label>
+                        <input type="text" id="inputPanggilan" class="form-control" placeholder="IMON">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="inputKelas">Kelas</label>
+                        <input type="text" id="inputKelas" class="form-control" placeholder="X">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputJurusan">Jurusan/Program Keahlian</label>
+                        <input type="text" id="inputJurusan" class="form-control" placeholder="DESAIN KOMUNIKASI VISUAL">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputKonsentrasi">Konsentrasi/Kompetensi Keahlian</label>
+                    <input type="text" id="inputKonsentrasi" class="form-control" placeholder="DESAIN KOMUNIKASI VISUAL">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputMotto">Motto / Tagline</label>
+                    <input type="text" id="inputMotto" class="form-control" placeholder="Motto hidup atau kalimat pemacu semangat">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputDeskripsi">Tentang Saya / Deskripsi Diri</label>
+                    <textarea id="inputDeskripsi" class="form-control" rows="3" placeholder="Tuliskan deskripsi singkat diri Anda..."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="inputMinat">Minat</label>
+                        <input type="text" id="inputMinat" class="form-control" placeholder="EDITING VIDEO">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputHobi">Hobi</label>
+                        <input type="text" id="inputHobi" class="form-control" placeholder="ADVENTURE">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="inputBidang">Bidang yang Ingin Dipelajari</label>
+                        <input type="text" id="inputBidang" class="form-control" placeholder="EDITING VIDEO">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCitaCita">Cita-Cita</label>
+                        <input type="text" id="inputCitaCita" class="form-control" placeholder="PEMBALAP">
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="submit" class="btn btn-primary">💾 Simpan Perubahan</button>
+                    <button type="button" id="resetBtn" class="btn btn-danger">🔄 Reset Default</button>
+                    <button type="button" id="cancelBtn" class="btn btn-outline">Tutup</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tombol Kembali Ke Atas -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">⬆️</button>
+
+    <!-- Toast Notifikasi -->
+    <div class="toast" id="toast">Data profil berhasil disimpan! 🎉</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
